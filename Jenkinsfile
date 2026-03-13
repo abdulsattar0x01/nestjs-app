@@ -46,16 +46,20 @@ stages{
 
     stage("Send Notification"){
 
-        steps {
-                script {
-                        def message = "Docker container '${CONTAINER_NAME}' is up and running on port ${PORT}."
-                        emailext(
-                                to: "${EMAIL}",
-                                subject: "Jenkins Notification: ${CONTAINER_NAME}",
-                                body: message
-                        )
-                }
+        steps (){
+                emailext (
+                        subject: "Deployment Successful: ${IMAGE}",
+                        body: "The Docker container ${CONTAINER_NAME} has been successfully deployed and is running on port ${PORT}.",
+                        to: "${EMAIL}"
+                )
+
+
         }
+               
+                        
+                        
+               
+    
 
     }
 }
