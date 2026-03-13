@@ -1,5 +1,5 @@
 # nestjs-app
-Nestjs app complete deployment using docker and jenkins on aws ec2 and jenkins
+Nestjs app complete deployment using docker and jenkins on aws ec2 and jenkins pipeline
 
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
