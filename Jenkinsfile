@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
 
 agent any
 
@@ -14,9 +14,9 @@ stages{
     stage("Clone Repository"){
 
         steps {
-                git branch : 'main' , url: 'https://github.com/abdulsattar0x01/nestjs-app'
+                git branch : 'main' , url: 'https://github.com/abdulsattar0x01/nestjs-app.git'
         }
-
+    
     }
 
     stage("Build Docker Image"){
